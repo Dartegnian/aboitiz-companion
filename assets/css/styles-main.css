@@ -1,0 +1,463 @@
+/* --- Compiled by Dartegnian --- */
+/* CSS MUST-HAVES */
+body {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+button {
+    outline: none;
+}
+@font-face {
+    font-family: "Helvetica Light";
+    src: url(../fonts/HelveticaLight.otf);
+}
+/* Further customization stuff, works mostly on Chromium */
+::selection {
+    background: white;
+    color: #0076ff;
+}
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0076ff;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+a {
+	color: #0076ff;
+}
+section#filler {
+    height: 137px;
+    background-color: #ffffff;
+}
+input.inputfield, input.button, button.userbutt, button.contactbutt {
+    outline: transparent;
+    border: 0;
+    background-color: rgba(100, 100, 100, 0.3);
+    color: black;
+	padding: 10px;
+	font-weight: 800;
+    font-family: Segoe UI Light;
+    transition: all .50s;
+}
+input.button:hover, button.userbutt:hover, button.contactbutt:hover {
+    background-color: rgba(0,118,255, 0.6);
+}
+button.contactbutt {
+    float: left;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+form td {
+    font-family: Segoe UI Light;
+}
+nav a {
+    cursor: pointer;
+    transition: all .50s;
+    color: #242424;
+    font-family: Segoe UI;
+    font-weight: 600;
+    padding: 0px;
+    padding-right: 30px;
+    text-align: left;
+    font-size: 20px;
+}
+nav {
+    padding-left: 30px;
+}
+nav a:hover {
+    color: #8b40f2;
+}
+nav #current {
+	/* color: #0076ff; */
+	background: linear-gradient(#e66465 0%, #9198e5);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
+}
+section#content {
+    background-color: white;
+    color: #676767;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h2 {
+    margin: 0;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #0076ff;
+}
+p {
+    font-family: Segoe UI Light;
+    margin: 0;
+}
+#infospace {
+    width: 35%;
+    float: right;
+    padding: 0% 2.5%;
+    margin-right: 3%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 45px;
+}
+#imagecontainer {
+    float: left;
+    width: 49%;
+    margin-left: 3%;
+    padding: 0% 2%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid transparent;
+}
+#imagecontainer img {
+    width: 100%;
+    display: block;
+}
+.fullbackground {
+    background-color: #0076ff;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-image: url(../images/realestatehouses.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+#vertmenu {
+    background: url(../images/handshake.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.partnerimg {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.36), 0 3px 6px rgba(0,0,0,0.43);
+    transition: all .50s;
+}
+.partnerimg:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.45), 0 10px 10px rgba(0,0,0,0.42);
+}
+div#rightcontain {
+    float: right;
+    width: 38%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+}
+#rightcontain p {
+    color: black;
+    font-size: 15px;
+    text-align: left;
+}
+#rightcontain h1 {
+    color: #0076ff;
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+div#leftcontain {
+    float: left;
+    width: 40%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px);
+}
+#leftcontain p {
+    color: #242424;
+    font-size: 15px;
+    text-align: left;
+}
+#leftcontain h1 {
+    color: #0076ff;
+    text-align: left;
+    margin: 0px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.vertcontain {
+    width: 1150px;
+    margin-left: -30px;
+}
+#juan {
+    float: left;
+    overflow-y: hidden;
+}
+.verticalmenu {
+    overflow-x: scroll;
+    width: 700px;
+}
+#vertmenu {
+    height: 400px;
+    padding: 40px;
+}
+.vertcontain ul {
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.vertcontain li {
+    height: 370px;
+}
+.vertcontain img {
+    width: 325px;
+}
+li {
+    display: inline-block;
+    padding: 0px 40px;
+    padding-left: 0px;
+    height: 400px;
+}
+.footcontain li {
+    display: block;
+    padding: 0px;
+    height: auto;
+}
+.footcontain {
+    width: 15%;
+    position: relative;
+    padding: 0px 40px 0px 40px;
+    float: left;
+    text-align: left;
+}
+header {
+    width: 100%;
+	z-index: 10;
+    position: fixed;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(10px); /* chrome://flags/#enable-experimental-web-platform-features */
+}
+header img {
+    width: 300px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+footer {
+    background-color: #f1f1f1;
+	padding: 30px;
+    position: relative;
+}
+footer a {
+    display: inline;
+}
+footer img {
+    width: 11%;
+    float: left;
+    display: inline;
+    padding: 0px 40px 0px 10px;
+}
+.footcontain h4 {
+    color: #0076ff;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+#footstuff {
+    padding-top: 40px;
+    overflow: hidden;
+}
+#footstuff a {
+    color: #333333;
+    font-size: 13px;
+    font-family: Segoe UI Light;
+}
+#footstuff ul {
+    padding-left: 0;
+}
+#footstuff p {
+    color: black;
+}
+#hero h1 {
+    margin-top: 85px;
+}
+#hero {
+	height: 250px;
+    background-color: #0076ff;
+    background: url(../images/estatelady.jpg) no-repeat center center fixed;
+	padding: 20px;
+	text-align: center;
+	color: black;
+	font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-size: cover;
+	font-size: 30px;
+	margin-top: 20px;
+}
+#apcfooter {
+    background: url(../images/APC.jpg);
+    background-size: 100% 57%;
+    background-attachment: fixed;
+    height: 20px;
+	color: white;
+	font-family: 'Segoe UI Light', Arial, Helvetica, sans-serif;
+	letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+#apcfooter a {
+	color: white;
+}
+#backtotop {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+	z-index: 3;
+	text-align: center;
+    color: #ffffff;
+	transition: all .50s ease-in-out;
+    background: linear-gradient(#df497f, #2191f5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#backtotop:hover {
+    color: white !important;
+    background-color: #0076ff !important;
+}
+#chevron {
+    color: inherit;
+	display: inline-block;
+	font-family: 'Segoe MDL2 Assets';
+	font-style: normal;
+	font-size: 25px;
+	margin-top: 9px;
+}
+#chevron:before {
+	content: '\e70e';
+}
+div#formcontainer {
+    padding: 100px 0px;
+}
+#formcontainer input.inputfield {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: 65px;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    padding-left: 75px;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+#formcontainer input.button {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: 65px;
+    padding: 20px;
+    font-size: 30px;
+    color: black;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+#final {
+    background-image: url(../images/condo.jpg);
+}
+#final h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-size: cover;
+    font-size: 50px;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px #222222;
+}
+.fa {
+    color: #242424;
+    font-size: 30px !important;
+    padding-right: 15px;
+    padding-top: 5px;
+    transition: all .50s;
+}
+.fa:hover {
+    color: #8b40f2;
+}
+#partnerbutt {
+    background-image: url(../images/mdl2/partnerup.png);
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: 38px;
+}
+#drivebutt {
+    background-image: url(../images/mdl2/car.png);
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: 38px;
+}
+#content th {
+    color: white;
+    background: linear-gradient(#df497f, #2191f5);
+    padding: 20px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+	font-size: 25px;
+	width: 25%;
+}
+#content td {
+    font-family: Segoe UI Light;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    background-image: url(../images/blurcondo.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+	font-size: 20px;
+	font-weight: 600;
+}
+#content h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #0076ff;
+    padding-bottom: 10px;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+#videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+iframe#videoContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.header2 {
+    background-color: pink;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.mainbody h1, #vidcontainer h1 {
+    padding: 0px 0px 0px 40px;
+    color: #ffffff;
+	text-align: left;
+    font-family: "Helvetica Light", 'Segoe UI', Helvetica, Arial, sans-serif;
+}
