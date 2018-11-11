@@ -74,38 +74,101 @@
 			</form>
 			<nav id="headnav">
 				<a id="current" style="border-right: 1px solid #e4e4e4;">Portfolio</a>
-				<a href="portfolio.php" style="padding-left: 25px;">Companions</a>
-				<a id="current">Properties</a>
+				<a id="current" style="padding-left: 25px;">Companions</a>
+				<a href="properties.php">Properties</a>
 			</nav>
 		</header>
 		<section id="filler">
 		</section>
 		<section id="content">
-			<h1>Properties</h1>
+			<h1>Companions</h1>
 			<nav id="empnav">
-				<a id="active">All</a>
-				<a href="luzon.php" class="others">Luzon</a>
-				<a href="visayas.php" class="others">Visayas</a>
-				<a href="mindanao.php" class="others">Mindanao</a>
+				<a href="portfolio.php" class="others">All</a>
+				<a id="active">Luzon</a>
+				<a href="visayascompanions.php" class="others">Visayas</a>
+				<a href="mindanaocompanions.php" class="others">Mindanao</a>
 			</nav>
 			<div id="entrycontainer">
-			<a href="property1.php">
-			<img class="sectionimage leftimage" src="assets\images\properties\property1.jpg"\>
-		</a>
-		<a href="property2.php">
-			<img class="sectionimage right" src="assets\images\properties\property2.jpg" \="" style="
-		margin-bottom: -4px;
-	">
-		</a>
-		<a href="property3.php">
-			<img class="sectionimage leftimage" src="assets\images\properties\property3.jpg"\>
-		</a>
-		<a href="property4.php">
-			<img class="sectionimage right" src="assets\images\properties\property4.jpg" \="" style="
-		margin-bottom: 100px;
-	">
-		</a>
-			</div>
+				<div id="entryfiller" style="float: left; background-image: url(assets/images/companions/pat.jpg);">
+					<div id="entry">
+						<h6 style="background-image: url(assets/images/companions/pat.jpg);"></h6>
+						<h5>Patricia Calugas</h5>
+						<p>Makati Companion</p>
+						<h4 class="loggedin">AVAILABLE</h4>
+						<div id="perfcontainer"></div>
+						<div class="moreinfo" id="info1">
+							Property Companion HQ
+						</div>
+						<div class="moreinfo" id="info2">
+							pcalugas@p-companion.co
+						</div>
+						<div class="moreinfo" id="info3">
+							69 properties sold
+						</div>
+						<div class="floatcontain">
+							<button class="moreinfo" id="fltlft">
+								Request
+							</button>
+							<button class="moreinfo" id="fltrght">
+								Relieve
+							</button>
+						</div>
+					</div>
+				</div>
+				<div id="entryfiller" style="float: right; background-image: url(assets/images/companions/mina.jpg);">
+					<div id="entry">
+						<h6 style="background-image: url(assets/images/companions/mina.jpg);"></h6>
+						<h5>Carmina Ambrocio</h5>
+						<p>Bataan Companion</p>
+						<h4 class="loggedout">UNAVAILABLE</h4>
+						<div id="perfcontainer"></div>
+						<div class="moreinfo" id="info1">
+							On leave
+						</div>
+						<div class="moreinfo" id="info2">
+							minaambrocio@p-companion.co
+						</div>
+						<div class="moreinfo" id="info3">
+							420 properties sold
+						</div>
+						<div class="floatcontain">
+							<button class="moreinfo" id="fltlft">
+								Request
+							</button>
+							<button class="moreinfo" id="fltrght">
+								Relieve
+							</button>
+						</div>
+					</div>
+				</div>
+				<div id="entryfiller" style="float: left; background-image: url(assets/images/companions/jason.jpg);">
+					<div id="entry">
+						<h6 style="background-image: url(assets/images/companions/jason.jpg);"></h6>
+						<h5>Jade Adriano</h5>
+						<p>Bonifacio Global City Companion</p>
+						<h4 class="loggedin">AVAILABLE</h4>
+						<div id="perfcontainer"></div>
+						<div class="moreinfo" id="info1">
+							Property Companion HQ
+						</div>
+						<div class="moreinfo" id="info2">
+							jeadriano@p-companion.co
+						</div>
+						<div class="moreinfo" id="info3">
+							50 properties sold
+						</div>
+						<div class="floatcontain">
+							<button class="moreinfo" id="fltlft">
+								Request
+							</button>
+							<button class="moreinfo" id="fltrght">
+								Relieve
+							</button>
+						</div>
+					</div>
+				</div>
+
+		</div>
 		</section>
 		<footer>
 			<div id="backtotop">

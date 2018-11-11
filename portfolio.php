@@ -87,9 +87,9 @@
 			<h1>Companions</h1>
 			<nav id="empnav">
 				<a id="active">All</a>
-				<a class="others">Luzon</a>
-				<a class="others">Visayas</a>
-				<a class="others">Mindanao</a>
+				<a href="luzoncompanions.php" class="others">Luzon</a>
+				<a href="visayascompanions.php" class="others">Visayas</a>
+				<a href="mindanaocompanions.php" class="others">Mindanao</a>
 			</nav>
 			<div id="entrycontainer">
 				<div id="entryfiller" style="float: left; background-image: url(assets/images/companions/pat.jpg);">

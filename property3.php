@@ -56,9 +56,6 @@
 			function Logout() {
 				window.location="index.php";
 			}
-			function DemoAlert() {
-				alert("No login credentials entered.\nYou are currently using a demo view.");
-			}
 		</script>
 		<script type="text/javascript">
 		google.charts.load("current", {packages:["corechart"]});

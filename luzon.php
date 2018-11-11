@@ -83,8 +83,8 @@
 		<section id="content">
 			<h1>Properties</h1>
 			<nav id="empnav">
-				<a id="active">All</a>
-				<a href="luzon.php" class="others">Luzon</a>
+				<a href="properties.php" class="others">All</a>
+				<a id="active" class="others">Luzon</a>
 				<a href="visayas.php" class="others">Visayas</a>
 				<a href="mindanao.php" class="others">Mindanao</a>
 			</nav>
@@ -94,14 +94,6 @@
 		</a>
 		<a href="property2.php">
 			<img class="sectionimage right" src="assets\images\properties\property2.jpg" \="" style="
-		margin-bottom: -4px;
-	">
-		</a>
-		<a href="property3.php">
-			<img class="sectionimage leftimage" src="assets\images\properties\property3.jpg"\>
-		</a>
-		<a href="property4.php">
-			<img class="sectionimage right" src="assets\images\properties\property4.jpg" \="" style="
 		margin-bottom: 100px;
 	">
 		</a>
