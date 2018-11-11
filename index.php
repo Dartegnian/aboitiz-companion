@@ -252,7 +252,7 @@
 						<td align="left"><input class="inputfield" type="text" name="username" size="20" placeholder="Full legal name" style="background-image: url(assets/images/mdl2/city.png);" maxlength="50"></td>
 						</tr>
 						<tr style="display: inline;">
-						<td align="left"><input class="inputfield" type="text" name="password" style="background-image: url(assets/images/mdl2/mail.png);" placeholder="Business email" size="20" maxlength="50" /></td>
+						<td align="left"><input class="inputfield" type="text" name="password" style="background-image: url(assets/images/mdl2/mailblack.png);" placeholder="Business email" size="20" maxlength="50" /></td>
 						</tr>
 						<tr style="display: inline;">
 						<td colspan="2" align="center"><input type="submit" value="Get A Companion" class="button"/></td>
