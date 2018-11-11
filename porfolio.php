@@ -21,7 +21,7 @@
 
 				
 				$("button#fltlft").click(function(){
-					alert ("Services requested!\nThey should be responding to your response in a moment.");
+					alert ("Services requested!\nThey should be answering to your response in a moment.");
 				});
 
 				$("button#fltrght").click(function(){
