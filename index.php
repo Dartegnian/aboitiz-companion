@@ -33,7 +33,7 @@
     			alert("Invalid or empty credentials.\nPlease type in your credentials and click the \"Log In\" button");
 			}
 			function redirect() {
-				window.location="porfolio.php";
+				window.location="portfolio.php";
 			}
 		</script>
 	</head>
@@ -41,7 +41,7 @@
 		<header>
 			<h1 style="display: inline;"> <img id="logo" src="assets\images\logomain.png"/></h1>
 			<button style="display: inline-block;float: right; margin-left: -5px; margin-top: 4px; margin-right: 30px;" class="userbutt" onclick="redirect()">Register</button>
-			<form action="porfolio.php" method="post" style="display: inline;">
+			<form action="portfolio.php" method="post" style="display: inline;">
 				<table border="0" style="display: inline; float: right;">
 					<tr style="display: inline;">
 					<td style="color: #000">Username</td>
