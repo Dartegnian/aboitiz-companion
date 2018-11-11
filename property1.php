@@ -13,6 +13,13 @@
 			section#filler {
 				background-image: url(assets/images/properties/makati.jpg);
 			}
+			#miscstuff div#entryfiller {
+				margin-left: 80px;
+			}
+			#miscstuff aside#infospace {
+				width: 55%;
+				border-right: 0px solid #e5e5e5;
+			}
 		</style>
 		<!-- Scripts -->
 		<script src='assets/js/jquery.min.js'></script>
@@ -61,7 +68,7 @@
 			['Task', 'Hours per Day'],
 			['Materials & Supply',     1],
 			['Manpower',      1],
-			['Land management',  1],
+			['Land Management',  1],
 			['Furniture', 1],
 			['Misc. property improvements',    1]
 			]);
@@ -105,15 +112,15 @@
 			data.addColumn('string', 'Names');
 			data.addColumn('number', 'Amountt');
 			data.addRows([
-			['Materials & Supply', 500000],
-			['Manpower', 140000],
-			['Land Management', 100000],
-			['Furniture', 250000],
-			['Miscellaneous', 50000]
+			['Materials & Supply', 5000000],
+			['Manpower', 260000],
+			['Land Management', 530000],
+			['Furniture', 750000],
+			['Miscellaneous', 90000]
 			]);
 
 			// Set chart options
-			var options = {'title':'AAAAAAA Property Breakdown in Phillipine Peso (PHP)',
+			var options = {'title':'Makati Property Breakdown in Phillipine Peso (PHP)',
 						'width':900,
 						'height':500};
 
@@ -154,13 +161,13 @@
 			<nav id="headnav">
 				<a id="current" style="border-right: 1px solid #e4e4e4;">Portfolio</a>
 				<a href="portfolio.php" style="padding-left: 25px;">Companions</a>
-				<a id="current">Properties</a>
+				<a href="properties.php" id="current">Properties</a>
 			</nav>
 		</header>
 		<section id="filler">
 		</section>
 		<section id="content">
-			<h1>AAAAAA Property</h1>
+			<h1>Makati Property</h1>
 			<nav id="empnav">
 				<a id="active">Luzon</a>
 				<a class="others">Visayas</a>
@@ -183,6 +190,38 @@
 			
 		</div>
 			<div id="chart_div"></div>
+			<div id="miscstuff">
+			<div id="entryfiller" style="float: left; background-image: url(assets/images/companions/pat.jpg);">
+					<div id="entry">
+						<h6 style="background-image: url(assets/images/companions/pat.jpg);"></h6>
+						<h5>Patricia Calugas</h5>
+						<p>Makati Companion</p>
+						<h4 class="loggedin">AVAILABLE</h4>
+						<div id="perfcontainer"></div>
+						<div class="moreinfo" id="info1">
+							Property Companion HQ
+						</div>
+						<div class="moreinfo" id="info2">
+							pcalugas@p-companion.co
+						</div>
+						<div class="moreinfo" id="info3">
+							69 properties sold
+						</div>
+						<div class="floatcontain">
+							<button class="moreinfo" id="fltlft">
+								Request
+							</button>
+							<button class="moreinfo" id="fltrght">
+								Relieve
+							</button>
+						</div>
+					</div>
+				</div>
+				<aside id="infospace">
+				<h2>Patricia Calugas</h2>
+				<p class="firsttwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</aside>
+			</div>
 		</div>
 		</section>
 		<footer>

@@ -9,9 +9,23 @@
 		<link href="assets/css/portfolio.css" rel="stylesheet"> <!-- Dark theme -->
 		<link rel="stylesheet" type="text/css" href="assets/css/textrotator.css"/>
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<style>
+			section#filler {
+				background-image: url(assets/images/properties/cebu.jpg);
+			}
+			#miscstuff div#entryfiller {
+				margin-left: 80px;
+			}
+			#miscstuff aside#infospace {
+				width: 55%;
+				border-right: 0px solid #e5e5e5;
+			}
+		</style>
 		<!-- Scripts -->
 		<script src='assets/js/jquery.min.js'></script>
 		<script src='assets/js/textrotator.js'></script>
+		<script src='assets/js/loader.js'></script>
+		<script src='assets/js/chartcore.js'></script>
 		<script>
 			$(document).ready(function(){
 				$(".header .rotate").textrotator({
@@ -46,6 +60,75 @@
 				alert("No login credentials entered.\nYou are currently using a demo view.");
 			}
 		</script>
+		<script type="text/javascript">
+		google.charts.load("current", {packages:["corechart"]});
+		google.charts.setOnLoadCallback(drawChart);
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+			['Task', 'Hours per Day'],
+			['Materials & Supply',     1],
+			['Manpower',      1],
+			['Land Management',  1],
+			['Furniture', 1],
+			['Misc. property improvements',    1]
+			]);
+
+			var options = {
+			title: 'Extend Your Focus On Your Property',
+			pieHole: 0.5,
+			};
+			var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+			chart.draw(data, options);
+			
+			function selectHandler() {
+			var selectedItem = chart.getSelection()[0];
+				if (selectedItem) {
+					var toppings = data.getValue(selectedItem.row, 1);
+					toppings++;
+					
+			}
+			data.setValue(selectedItem.row, 1, toppings);
+			chart.draw(data, options);
+			}
+			google.visualization.events.addListener(chart, 'select', selectHandler);    
+			chart.draw(data, options);
+		}
+		</script>
+		<script type="text/javascript">
+
+		// Load the Visualization API and the corechart package.
+		google.charts.load('current', {'packages':['corechart']});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.charts.setOnLoadCallback(drawChart);
+
+		// Callback that creates and populates a data table,
+		// instantiates the pie chart, passes in the data and
+		// draws it.
+		function drawChart() {
+
+			// Create the data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Names');
+			data.addColumn('number', 'Amountt');
+			data.addRows([
+			['Materials & Supply', 100000],
+			['Manpower', 260000],
+			['Land Management', 67000],
+			['Furniture', 7500000],
+			['Miscellaneous', 487000]
+			]);
+
+			// Set chart options
+			var options = {'title':'Cebu Property Breakdown in Phillipine Peso (PHP)',
+						'width':900,
+						'height':500};
+
+			// Instantiate and draw our chart, passing in some options.
+			var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+			chart.draw(data, options);
+		}
+		</script>
 		<?php
 			if(empty($_POST['username'])) {
 				echo '<script type="text/javascript">', 'DemoAlert();', '</script>';
@@ -78,37 +161,68 @@
 			<nav id="headnav">
 				<a id="current" style="border-right: 1px solid #e4e4e4;">Portfolio</a>
 				<a href="portfolio.php" style="padding-left: 25px;">Companions</a>
-				<a id="current">Properties</a>
+				<a href="properties.php" id="current">Properties</a>
 			</nav>
 		</header>
 		<section id="filler">
 		</section>
 		<section id="content">
-			<h1>Properties</h1>
+			<h1>Cebu Property</h1>
 			<nav id="empnav">
-				<a id="active">All</a>
 				<a class="others">Luzon</a>
-				<a class="others">Visayas</a>
+				<a id="active">Visayas</a>
 				<a class="others">Mindanao</a>
 			</nav>
 			<div id="entrycontainer">
-			<a href="property1.php">
-			<img class="sectionimage leftimage" src="assets\images\properties\property1.jpg"\>
-		</a>
-		<a href="property2.php">
-			<img class="sectionimage right" src="assets\images\properties\property2.jpg" \="" style="
-		margin-bottom: -4px;
-	">
-		</a>
-		<a href="property3.php">
-			<img class="sectionimage leftimage" src="assets\images\properties\property3.jpg"\>
-		</a>
-		<a href="property4.php">
-			<img class="sectionimage right" src="assets\images\properties\property4.jpg" \="" style="
-		margin-bottom: 100px;
-	">
-		</a>
+				<div class="mainbody">
+			<div id="imagecontainer">
+				<div id="image1container" class="images">
+					<a href="assets\images\properties\cebu.jpg" target='_blank'>
+						<img src="assets\images\properties\cebu.jpg"\>
+					</a>
+				</div>
 			</div>
+			<aside id="infospace">
+				<p>Cebu is one of the best places to invest properties in the Philippines right now. With a growing market and high urbanization, investors can see returns of upwards 250% in at least 10 years.</p>
+				<br/>
+				<div id="donutchart" style="width: 500px; height: 300px;"></div>
+			</aside>
+			
+		</div>
+			<div id="chart_div"></div>
+			<div id="miscstuff">
+			<div id="entryfiller" style="float: left; background-image: url(assets/images/companions/reisha.jpg);">
+					<div id="entry">
+						<h6 style="background-image: url(assets/images/companions/reisha.jpg);"></h6>
+						<h5>Reisha Ferrer</h5>
+						<p>Cebu Companion</p>
+						<h4 class="loggedout">UNAVAILABLE</h4>
+						<div id="perfcontainer"></div>
+						<div class="moreinfo" id="info1">
+							On leave
+						</div>
+						<div class="moreinfo" id="info2">
+							rferrer@p-companion.co
+						</div>
+						<div class="moreinfo" id="info3">
+							92 properties sold
+						</div>
+						<div class="floatcontain">
+							<button class="moreinfo" id="fltlft">
+								Request
+							</button>
+							<button class="moreinfo" id="fltrght">
+								Relieve
+							</button>
+						</div>
+					</div>
+				</div>
+				<aside id="infospace">
+				<h2>Reisha Ferrer</h2>
+				<p class="firsttwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</aside>
+			</div>
+		</div>
 		</section>
 		<footer>
 			<div id="backtotop">

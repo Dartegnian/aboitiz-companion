@@ -413,7 +413,6 @@ div#formcontainer {
     background-color: black;
     color: white;
     padding: 10px;
-    background-image: url(../images/blurcity.png);
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
@@ -606,4 +605,8 @@ aside#infospace p {
     color: black;
     text-align: left;
     font-size: 14px;
+}
+#infospace {
+	width: 35%;
+    border-right: 0px solid #e5e5e5;
 }
